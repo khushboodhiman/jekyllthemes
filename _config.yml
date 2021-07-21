@@ -1,4 +1,4 @@
-name: Jekyll Themes
+name: Khushboo Dhiman
 url: http://matt.harzewski.com
 description: Insert tagline here
 
@@ -8,6 +8,7 @@ plugins: [jekyll-paginate]
 
 highlighter: pygments
 paginate: 20
+theme: Kross-Creative-Portfolio-Theme
 
 markdown: rdiscount
 rdiscount:
