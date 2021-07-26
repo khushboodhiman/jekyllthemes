@@ -28,4 +28,6 @@ Thumbs.db
 
 *.tmp
 .vscode
+
 .tmp.drivedownload
+.vscode
