@@ -917,3 +917,16 @@ blockquote {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* My CSS */
+
+.blog-img {
+  height: 220px;
+}
+
+.center-img {
+  width: 100%;
+  display: block;
+  margin: 24px auto;
+  border-radius: 8px;
+}
