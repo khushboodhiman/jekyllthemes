@@ -102,39 +102,52 @@ FACEBOOK: https://www.facebook.com/themefisher
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h3 class="font-tertiary mb-3">React Learning (Day-1)</h3>
-        <p class="font-secondary mb-5">Published on August 4, 2021 by <span class="text-primary">Khushboo Dhiman</span
+        <h3 class="font-tertiary mb-3">React Learning (Day-2)</h3>
+        <p class="font-secondary mb-5">Published on August 5, 2021 by <span class="text-primary">Khushboo Dhiman</span
             class="text-primary"> on <span>Web Technologies</span></p>
         <div class="content">
 
-          <img src="images/blog/post-9.jpg" alt="post-thumb" class="img-fluid rounded mr-5 mb-5 center-img">
+          <img src="images/blog/post-10.jpg" alt="post-thumb" class="img-fluid rounded mr-5 mb-5 center-img">
 
           <h3 class="font-tertiary">React Learning.</h3>
-          <p class="mb-4">Today, my focus was on learning things, So that I can get myself working on the applications that I make in react. I already did 2 or 3 basic modules of the react course before the training started. Now it was time to get advanced. So, I started with the next module which included some dealing with components.</p>
+          <p class="mb-60">Today, I started the next module of React course. Its main focus is - State, Handling Events and Updating UI and working with State.</p>
 
           <h3 class="font-tertiary">Key things that I learnt today.</h3>  
-          <p> 1. Splitting Components into multiple.</p>
-          <p> 2. Creating Wrapper Components.</p>
-          <p class="mb-4"> 3. Alternative function syntax.</p>
+          <p> 1. Basics of React State.</p>
+          <p> 2. Reacting on a button click.</p>
+          <p> 3. React useState Hook.</p>
+          <p class="mb-4"> 3. Update the state of React.</p>
         <br>
 
-        <h4 class="font-tertiary">1. Splitting Components into multiple.</h4>
-        <p class="mb-4">As we have a large number of components in our react code, and those components are indeed javaScript functions, So we want our component or functions to be very specific and split up the components whenever needed. Whenever there seems like this is a sub-components then do create a component and call it in the parent component. But there are not hard and fast rules of when a sub-component should be created. Its totally upto you :)</p>
+        <h4 class="font-tertiary">1. Basics of React State.</h4>
+        <p class="mb-4">State is the main reason why React reacts :P (lame joke, but its truth). Without using state, even if change something, some variable or value in our project, react is going to ignore it(Huh, I dont care). But using state we got that power to force react that you need to re-render this component because something has changed.</p>
 
-        <img src="images/blog/Screenshot (279).png" class="code-img mb-60" alt="Screenshot">
+        <img src="images/blog/gif.gif" class="mb-60 center-img" alt="You need to change">
 
-        <h4 class="font-tertiary">2. Creating Wrapper Components.</h4>
-        <p class="mb-4">Child components that we put in our custom components dont get accepted directly as it occurs in HTML. So, we have to put the child in the component using:</p>
+        <h4 class="font-tertiary">2. React to a button click.</h4>
+        <p class="mb-4">Event listeners in react start with "on" like onClick, onHover and so on. Now, all event handlers need a function which specifies what needs to be done when this event occurs. You can declare a function in a component function itself.</p>
 
-        <img src="images/blog/Screenshot (283).png" class="code-img mb-60" alt="Screenshot">
+        <img src="images/blog/Screenshot (284).png" class="code-img mb-60" alt="Screenshot">
 
-        <h4 class="font-tertiary">3. Alternative function syntax.</h4>
-        <p class="mb-4">Just as we do it in javaScript, we can have the arrow function syntax in React too.</p>
+        <p class="mb-4"><em>Here we just need to point to function not call it because if we call it, its going to execute when this function or component renders and this would be so early. So we will just point it here and react will understand that this function needs to be executed only when this event occurs.</em></p>
 
-        <img src="images/blog/Screenshot (282).png" class="code-img mb-60" alt="Screenshot">
+        <p class="mb-60">Its considered a best pratice to name the event handlers functions ending with the work Handler like clickHandler. So to use React States we need to import it <b>import {useState} from 'react';</b></p>
 
+        <h4 class="font-tertiary">3. React useState Hook.</h4>
+        <p class="mb-4">In React, hooks usually start with 'use'. And can only be called inside a component. useState forces react to re-render the component when something has changed. So we need to specify that for which variables or things react has to re-render on change. We call it the initial value and when that initial value changes, re-render.</p>
 
-          <h5 class="font-tertiary">Course link: <a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/">https://www.udemy.com/course/react-the-complete-guide-incl-redux/</a></h5>
+        <p class="mb-4">useState hook returns an object. From which we mostly need two thigns - variable and function-to-update-variable-state. So we can use object destructuring for this.</p>
+
+        <img src="images/blog/Screenshot (286).png" class="code-img mb-60" alt="Screenshot">
+
+        <h4 class="font-tertiary">3. Updating the State.</h4>
+        <p class="mb-4">We can update the state of variable using the function returned by useState. Code below shows how updation occurs.</p>
+
+        <p class="mb-4">Every instance of a component has its own state. Updation in one instance state would not effect others and only that component instance will be re-rendered. React remembers which is the latest state set for the component instance if the component is rendered not for the first time.</p>
+
+        <img src="images/blog/Screenshot (287).png" class="code-img mb-60" alt="Screenshot">
+
+        <h5 class="font-tertiary">Course link: <a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/">https://www.udemy.com/course/react-the-complete-guide-incl-redux/</a></h5>
         </div>
       </div>
     </div>
